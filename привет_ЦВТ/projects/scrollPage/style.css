@@ -1,0 +1,81 @@
+/* CSS files add styling rules to your content */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Poppins", sans-serif;
+}
+
+.container {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	overflow: auto;
+	scroll-snap-type: y mandatory;
+}
+
+.container .section {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	scroll-snap-align: start;
+	background-blend-mode: multiply;
+}
+
+.container .section:nth-child(1) {
+	background: #f00 url("https://www.cre.ru/content/upload/news/15410649043732.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.container .section:nth-child(2) {
+	background: #0f0
+		url("https://lh3.googleusercontent.com/proxy/G21i_i_WSs-Afww_xMnHkkLie8bG57uCE91vL8DhL-diRkQEFFmAA1lVByh3BAo8vvXjFifpMgKOZ8gHIaiPXcSa7dzCQCUmKvrREB_R2p_wHBMraWWc1q-rk1KZZ6zYBcc-");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.container .section:nth-child(3) {
+	background: #ff0 url("https://1gai.ru/uploads/posts/2019-05/1557322878_544445.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.container .section:nth-child(4) {
+	background: #00f url("https://www.cre.ru/content/upload/news/15410649043732.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.container .section:nth-child(5) {
+	background: #0ff url("https://www.cre.ru/content/upload/news/15410649043732.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.container .section .content {
+	position: absolute;
+	bottom: 50px;
+	left: 50px;
+	max-width: 700px;
+}
+
+.container .section .content h2 {
+	background: #fff;
+	color: #111;
+	font-weight: 600;
+	display: inline-block;
+	padding: 10px 20px;
+	font-size: 7vh;
+}
+
+.container .section .content p {
+	background: #fff;
+	color: #111;
+	font-weight: 300;
+	padding: 10px 20px;
+	margin-top: 10px;
+	font-size: 5vh;
+}
